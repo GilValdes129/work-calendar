@@ -1,11 +1,7 @@
-body{
-   margin: 0;
-   font-family: sans-serif;
-}
 
 .hero {
     height: 100vh;
-    width: 100vw;
+    /*width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -13,16 +9,17 @@ body{
     background-color: black;
     background-position: center center;
     background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
+    background-size: cover;*/
+    background-image: url(./Images/Copenhaguen-Photo.jpeg);
+   /* position: relative;*/
 }
 
-.hero h1{
-    font-size: 35px;
+/*.hero h1{
+    /*font-size: 35px;
     color: white;
-}
+}*/
 
-.hero .StartBtn{
+/*.hero .StartBtn{
     border: 1px solid black ;
     border-radius: 5px;
     padding: 5px 45px 5px 45px;
@@ -31,4 +28,4 @@ body{
     font-weight: bold;
     font-size: 1.5rem;
     text-decoration: none;
-}
+}*/
