@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Search</title>
+</head>
+<body class="bg-gray-200">
+    <div class="mx-20 lg:mx-5 mt-4">
+        Choose your options and search the best flight for you
+    </div>
+
+    <div class="bg-slate-400">
+        <form action="" id="searchFormContainer" class="mx-20 lg:mx-5 mt-3 p-2 font-sans flex flex-col lg:flex-row justify-center items-center border border-sky-600 rounded-lg bg-sky-600">
+            <div id="container"></div>
+    
+            <label for="origin" class="font-bold">Origin</label>
+            <input type="text" name="origin" id="origin" class="origin m-1 b-1 bg-slate-100 border-2 border-slate-300 border-solid" placeholder="Type your origin"><br>
+    
+            <label for="destination" class="font-bold">Destination</label>
+            <input type="text" name="destination" id="destination" class="origin m-1 b-1 bg-slate-100 border-2 border-slate-300 border-solid" placeholder="Type your destination"><br>
+            
+            <label for="departure-date" class="font-bold">Departure date</label>
+            <input type="date" name="departure-date" id="departure-date" class="departure-date m-1 b-1 bg-slate-100 border-2 border-slate-300 border-solid" placeholder="Type your departure date"><br>
+    
+            <label for="return-date" class="font-bold">Return date</label>
+            <input type="date" name="return-date" id="return-date" class="return-date m-1 b-1 bg-slate-100 border-2 border-slate-300 border-solid" placeholder="Type your return date"><br>
+    
+            <button id= "searchBtn" type="submit" name="submit" class="submit m-1 border border-cyan-700 border-solid rounded-full py-1 px-11 bg-cyan-100 hover:bg-cyan-400 text-cyan-900 text-center text-xl no-underline" value="Search">✈ Search</button>
+        </form>
+    </div>
+    
+
+    <div class="flex justify-center">
+        <p id="warningMessage" class="font-bold text-lg text-red-500 hidden">Please fill out all the inputs before proceeding</p>
+    </div>
+
+    <table>
+        <th>Search Results</th>
+        <tbody id="resultsList"></tbody>
+    </table>
+    <div>
+        <div class="hide">Tasa de conversion</div>
+        <div> directo</div>
+        <div> barato</div>
+        <div></div>
+        <div></div>
+    </div>
+
+    <script src="searchscript.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+</body>
+</html>
